@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *
+    {
+        margin:0;
+        padding:0;
+        font-family: 'poppins', sans-serif;
+        justify-content:center;
+        align-items:center;
+    }
+    body{
+        display : flex;
+        justify-content:center;
+        align-items:center;
+        background:#16384c;
+        animation-name: ex;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+       
+    }
+    @keyframes ex{
+      from {background-color:bisque;}
+    to {background-color: aqua;}
+    }
+    .container
+    {
+        position:relative;
+        width: 1100px;
+        display: flex;
+        justify-content : center;
+        align-items: center;
+        flex-wrap:wrap;
+        padding:30px;
+    }
+    .container.card
+    {
+        position : relative;
+        max-width : 300px;
+        max-height: 420px;
+        background: #fff;
+        margin : 30px 10px;
+        padding: 20px 15px;
+        display : flex;
+        flex-direction : column;
+        box-shadow : 0 5px 202px rgba(0,0,0,0.5);
+        transition : 1.5s ease-in-out;
+    }
+    .container.card:hover
+    {
+        height : 420px;
+    }
+
+    .container .card .imgbox
+    {
+        position : relative;
+        width:200px;
+        height:200px;
+        top : -10px;
+        left: 10px;
+        z-index : 1;
+        box-shadow : 0 5px 202px rgba(0,0,0,0.2);
+    }
+    .container .card .imgbox bday.gif
+    {
+        max-width: 20px;
+        border-radius : 5px 5px;
+        left : 20px;
+    }
+    .container .card .content
+    {
+        position : relative;
+        margin-top : -100px;
+        padding: 10px 15px;
+        text-align : center;
+        color:red;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .container .card:hover .content
+    {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -20px;
+        transition-delay: 0.3s;
+    }
+    embed
+    {
+        height : 80px;
+        width : 300px;
+    }
+    
+</style>
+<body>
+    <embed src="C:\Users\DELL\Downloads\html requriments/bday song.mp3" autostart = 'true'>
+    </embed>
+    <div class = 'container'>
+        <div class = 'card'>
+            <div class = 'imgbox'>
+                <img src = 'C:\Users\DELL\Downloads\html requriments/bday.gif'>
+            </div>
+            <div class = 'content'>
+                <h2><bold>wish</bold></h2>
+                <p><bold>MANY MORE HAPPY RETURNS OF THE DAY RA SATISH ,HAPPY GA SUKHAM GA UNDU RA MAVA,</p>
+            </div>
+        </div>
+        <div class = 'card'>
+            <div class = 'imgbox'>
+                <img src = 'C:\Users\DELL\Downloads\html requriments/bday2.jpg'>
+            </div>
+            <div class = 'content'>
+                <h2><bold>ADVICE</bold></h2>
+                <p><bold>INKA EPPUDU AYYNA MANCHI GA MARII DRUGS AMMADAM STOP CHEYYI RA BABU SCARCTH NUCHII START CHEYYDAM APPI INKA CHADVUKO RA KANNA . 
+                    </bold>
+                </p>
+            </div>
+        </div><div class = 'card'>
+            <div class = 'imgbox'>
+                <img src = 'C:\Users\DELL\Downloads\html requriments/bday2.jpg'>
+            </div>
+            <div class = 'content'>
+                <h2><bold>PARTY</bold></h2>
+                <p><bold>SARE LE EDO AYYPOYINDII INKA MANCHII GA MARII CHADVUKO 
+                INKA , SARE LE PARTY ISTEY BREAK EVVADANIKI READY GA UNNAM ,
+                EKKADA AYYANA E PLACE AYYANA MEMU READY GA UNTAM RA 
+                BILL NEEDI ENJOYMNET MAADI RA ... ENJOY CHEDDAM INKA .</bold>
+                </p>
+            </div>
+        </div>
+
+    </div>
+        
