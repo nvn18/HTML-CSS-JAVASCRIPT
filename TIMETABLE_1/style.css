@@ -1,0 +1,34 @@
+body{
+    background-color:azure;
+    background-image: url("C:\\Users\\DELL\\Documents\\WEBPAGES\\time table\\tt2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, th , td{
+    border:1px solid black;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    padding:6px;
+    margin-left:350px;
+    margin-top:70px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+}
+tr:nth-child(odd) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  tr:nth-child(even) {
+    background-color:burlywood;
+  }
+  th:nth-child(even) {
+    background-color:burlywood;
+  }
+  th:nth-child(odd) {
+    background-color:az;
+  }
+  tr:hover
+  {
+    background-color: beige;
+  }
