@@ -1,0 +1,50 @@
+body{
+    background-color:burlywood;
+    background-image: url("tt1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, th , td{
+    border:1px double black;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    padding:6px;
+    margin-left:350px;
+    margin-top:70px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    margin-right:200px;
+    transition: width 2s height 2s;
+}
+tr
+{
+  transition: width 2s height 2s;
+}
+tr:nth-child(odd) {
+    background-color: rgba(150, 205, 212, 0.4);
+  }
+tr:nth-child(even) {
+    background-color:rgb(135, 197, 222);
+  }
+th:nth-child(even) {
+    background-color:rgb(135, 222, 164);
+  }
+th:nth-child(odd) {
+    background-color:azure;
+  }
+tr:hover
+  {
+    background-color: beige;
+  }
+  img
+  {
+    margin-top:5px;
+    margin-left:350px;
+    width:60%;
+  }
+  table
+  {
+    width:1000px;
+  }
