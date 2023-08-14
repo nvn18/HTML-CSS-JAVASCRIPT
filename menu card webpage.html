@@ -4,73 +4,112 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Textarea element</title>
+    <title>menu card</title>
+
+    <style>
+      .container
+{
+    background-color: blanchedalmond;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+#title
+{
+    font-size: 30px;
+    color:coral;
+    font-family: algerian;
+}
+label
+{
+    font-size:20px;
+}
+span{
+    font-size:20px;
+}
+#bun
+{
+    font-size:20px;
+    color:red;
+}
+#bun:hover
+{
+    background-color: aquamarine;
+    font-size:20px;
+}
+input[type=text],input[type=number]
+{
+    background-color: lightblue;
+}
+input[type=text]:focus
+{
+    background-color:lightcoral;
+    font-size:20px;
+}
+input[type=range]
+{
+    background-color:red;
+}
+#sauce
+{
+    background-color:cadetblue;
+    font-size:20px;
+}
+#sauce:focus
+{
+    background-color:cornflowerblue;
+    font-size:20px;
+}
+input[type=number]:focus
+{
+    background-color:lightcoral;
+    font-size:20px;
+}
+#submit
+{
+    font-size:25px;
+}
+#submit:hover
+{
+    background-color:green;
+}
+#clear
+{
+    font-size:25px;
+}
+#clear:hover
+{
+    background-color:red;
+}
+.submission
+{
+    padding:20px;
+}
+      </style>
+
   </head>
-  <style>
-    body{
-      background-color: aqua;
-      height : 100px;
-      width:100%;
-      text-align:center;
-      animation-name: ex;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-    }
-    @keyframes ex{
-      from {background-color: aqua;}
-    to {background-color: yellow;}
-    }
-    #logo{
-      width : 30%;
-      height : 150px;
-      transition : width 2s, height 2s, transform 2s;
-      border-radius: 15px 50px;
-      border:dashed red;
-      border-style: double;
-      box-shadow: 5px;
-    }
-    #logo:hover{
-      transform : rotate(360deg);
-    }
-    h1{
-      color: red;
-      height : 10px;
-      padding-bottom: 15px;
-    }
-    #patty{
-      color: red;
-      font-size: 15px;
-    }
-    #amount{
-      color: red;
-      font-size: 15px;
-    }
-    #doneness{
-      color: red;
-      font-size: 15px;
-    }
-    #extra{
-      color:red;
-    }
-  </style>
   <body>
     <section id="overlay">
       <img src="C:\Users\DELL\Downloads\EDITING/c2.jpg" alt="neeraj's Burgers Logo" id="logo">
       <hr>
-      <form action="submission.html" method="POST">
-        <h1>Create a burger!</h1>
+      <div class="container">
+        <form action="submission.html" method="POST">
+        
+        <h1 id="title">Create a burger!</h1>
 					<section class="protein">
-          <label for="patty">What type of protein would you like?:</label>
+          <label for="patty">What type of protein would you like?:</label><br><br>
     			<input type="text" name="patty" id="patty">
         </section>
         <hr>
         <section class="patties">
-          <label for="amount">How many patties would you like?</label>
+          <label for="amount">How many patties would you like?</label><br><br>
           <input type="number" name="amount" id="amount">
         </section>
         <hr>
         <section class="cooked">
-          <label for="doneness">How do you want your patty cooked</label>
+          <label for="doneness">How do you want your patty cooked</label><br><br>
           <br>
           <span>Rare</span>
           <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
@@ -78,27 +117,27 @@
         </section>
         <hr>
         <section class="toppings">
-          <span>What toppings would you like?</span>
+          <span>What toppings would you like?</span><br><br>
           <br>
           <input type="checkbox" name="topping" id="lettuce" value="lettuce">
-          <label for="lettuce">Lettuce</label>
+          <label for="lettuce">Lettuce</label><br>
           <input type="checkbox" name="topping" id="tomato" value="tomato">
-          <label for="tomato">Tomato</label>
+          <label for="tomato">Tomato</label><br>
           <input type="checkbox" name="topping" id="onion" value="onion">
-          <label for="onion">Onion</label>
+          <label for="onion">Onion</label><br>
         </section>
         <hr>
         <section class="cheesy">
-          <span>Would you like to add cheese?</span>
+          <span>Would you like to add cheese?</span><br><br>
           <br>
           <input type="radio" name="cheese" id="yes" value="yes">
-          <label for="yes">Yes</label>
+          <label for="yes">Yes</label><br>
           <input type="radio" name="cheese" id="no" value="yes">
-          <label for="no">No</label>
+          <label for="no">No</label><br>
         </section>
         <hr>
         <section class="bun-type">
-          <label for="bun">What type of bun would you like?</label>
+          <label for="bun">What type of bun would you like?</label><br><br>
           <select name="bun" id="bun">
             <option value="sesame">Sesame</option>
             <option value="potatoe">Potato</option>
@@ -107,7 +146,7 @@
         </section>
         <hr>
         <section class="sauce-selection">
-          <label for="sauce">What type of sauce would you like?</label>
+          <label for="sauce">What type of sauce would you like?</label><br><br>
           <input list="sauces" id="sauce" name="sauce">
           <datalist id="sauces">
             <option value="ketchup"></option>
@@ -117,20 +156,24 @@
         </section>
         <hr>
         <section class="extra-info">
-          <label for="extra">Anything else you want to add?</label>
+          <label for="extra">Anything else you want to add?</label><br><br>
           <br>
           <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
         </section>
         <hr>
 
         <section class="submission">
-          <!--Add your code below-->
-          <input type="submit" value="submit">
+          <input type="submit" value="submit" id="submit">
+          
+          <input  type="reset" value="clear" id="clear">
           
           
         </section>
         
       </form>
+      </div>
+      
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
